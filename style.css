@@ -1,0 +1,32 @@
+:root {
+    --main-font: Helvetica;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+*, *:after, *:before {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: var(--main-font);
+    margin: 0;
+}
+
+/* Reset of margins */
+
+h1, h2, h3, h4, h5, h6, p {
+    margin: 0;
+}
+
+.title {
+    font-size: 2rem;
+    margin: 2rem 0;
+}
+
+.text-center {
+    text-align: center;
+}
