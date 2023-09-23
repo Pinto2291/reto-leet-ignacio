@@ -2,10 +2,21 @@ function convertToLeet(text) {
     const leetTable = {
     a: "4",
     b: "8",
+    c: "(",
+    d: "[)",
     e: "3",
+    f: "|=",
     g: "6",
+    h: "|-|",
+    i: "|",
+    j: "]",
+    k: "|<",
     l: "1",
+    m: "|Y|",
+    n: "/\/",
     o: "0",
+    p: "|>",
+    q: "0,"
     s: "5",
     t: "7",
     z: "2"
