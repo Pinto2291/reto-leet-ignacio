@@ -1,5 +1,8 @@
 :root {
     --main-font: Helvetica;
+    --background-blue-1: #0984e3;
+    --background-blue-2: #74b9ff;
+    --font-white: #FFF;
 }
 
 html {
@@ -14,6 +17,7 @@ html {
 body {
     font-family: var(--main-font);
     margin: 0;
+    background-color: var(--background-blue-1);
 }
 
 /* Reset of margins */
@@ -22,27 +26,101 @@ h1, h2, h3, h4, h5, h6, p {
     margin: 0;
 }
 
-.title {
-    font-size: 2rem;
-    margin: 2rem 0;
-}
+/* utilities */
 
 .text-center {
     text-align: center;
 }
 
+.text-uppercase {
+    text-transform: uppercase;
+}
+
+.text-white {
+    color: var(--font-white);
+}
+
+.text-bold {
+    font-weight: bold;
+}
+
+/* Title and subtitle */
+
+.title {
+    font-size: 2.5rem;
+    margin: 2rem 0;
+    text-transform: uppercase;
+    text-decoration: underline;
+}
+
+.subtitle {
+    margin: 1.5rem 0;
+    font-size: 2rem;
+}
+
+.text-p {
+    margin: 1.5rem 0;
+    font-size: 1.5rem;
+}
+
 .container {
     display: flex;
-    gap: 25px;
+    gap: 1.5rem;
     flex-direction: row;
     justify-content: center;
-
+    flex-wrap: wrap;
 }
 
 button {
     padding: 10px;
 }
 
-#result {
+.btn {
+    padding: 2rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 1.5rem;
+    border: 2px solid black;
+    border-radius: 1rem;
+    transition: all 250ms ease-in-out 100ms;
+}
+
+.btn:hover {
+    transform: scale(1.15);
+}
+
+.second-container {
+    margin-top: 25px;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.text-area {
     font-size: 25px;
+    border: 0.25rem solid black;
+}
+
+/* leet multiple */
+
+.sub-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 1rem;
+}
+
+.container-leet-multiple {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    margin-bottom: 1rem;
 }

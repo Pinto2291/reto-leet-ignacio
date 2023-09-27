@@ -10,15 +10,60 @@
 <body>
     <h1 class="title text-center">Leet challenge by Ignacio</h1>
 
+    <h2 class="text-center subtitle">primer sistema de conversion</h2>
+
+    <p class="text-p text-center">este sistema permite escoger cual sistema LEET usar para convertir el texto</p>
+
     <div class="container">
-        <textarea name="textLeet" id="leetText" cols="30" rows="10"></textarea>
 
-        <button id="buttonLeet">Convertir</button>
+        <div class="sub-container">
+            <p class="text-center subtitle text-uppercase text-bold text-white">texto de entrada</p>
+            <textarea class="text-area" name="textLeet" id="leetText" cols="25" rows="8"></textarea>
+        </div>
+        
+        <div class="sub-container">
+            <p class="text-center subtitle text-uppercase text-bold text-white">resultado</p>
+            <textarea class="text-area" name="result-area" id="result" cols="25" rows="8"></textarea>
+        </div>
 
-        <p id="result"></p>
+    </div>
+
+    <div class="second-container">
+        <button class="btn" id="buttonLeet">Convertir a leet</button>
+        <button class="btn" id="buttonLeetSimple">Convertir a leet simple</button>
+        <button class="btn" id="buttonReset">reset</button>
+    </div>
+
+    <h2 class="subtitle text-center">segundo sistema de conversion</h2>
+
+    <p class="text-p text-center">este segundo sistema convierte el texto a todos los sistemas LEET de forma simultanea</p>
+
+    <div class="sub-container">
+        <p class="text-center subtitle text-uppercase text-white text-bold">texto de entrada</p>
+        <textarea class="text-area" name="textLeet" id="leetTextMultiple" cols="20" rows="7"></textarea>
+    </div>
+
+    <div class="container-leet-multiple">
+
+        <div class="sub-container">
+            <p class="text-center subtitle text-uppercase text-white text-bold">leet simple</p>
+
+            <textarea class="text-area" name="textLeet" id="leet-multiple-simple" cols="20" rows="7"></textarea>
+        </div>
+
+        <div class="sub-container">
+            <p class="text-center subtitle text-uppercase text-white text-bold">leet avanzado</p>
+
+            <textarea class="text-area" name="textLeet" id="leet-multiple-advance" cols="20" rows="7"></textarea>
+        </div>
+        
+    </div>
+
+    <div class="button-container">
+        <button class="btn" id="button-conversion-multiple">convert</button>
+        <button class="btn" id="button-reset-multiple">reset all</button>
     </div>
 
     
-
 </body>
 </html>
