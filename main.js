@@ -1,66 +1,51 @@
-function convertToLeet(text) {
-    const leetTable = {
-    a: "4",
-    b: "8",
-    c: "(",
-    d: "[)",
-    e: "3",
-    f: "|=",
-    g: "6",
-    h: "|-|",
-    i: "|",
-    j: "]",
-    k: "|<",
-    l: "1",
-    m: "|Y|",
-    n: "/\/",
-    o: "0",
-    p: "|>",
-    q: "0,"
-    s: "5",
-    t: "7",
-    z: "2"
-};
+let textArea = document.getElementById('leetText');
+let buttonLeet = document.getElementById('buttonLeet');
+let result = document.getElementById('result');
 
-    let leetText = "";
+function leetConverter(text) {
 
-for (let i = 0; i < text.length; i++) {
-        const char = text[i].toLowerCase();
-    if (leetTable.hasOwnProperty(char)) {
-        leetText += leetTable[char];
-    } else {
-        leetText += text[i];
-    }
+    let finalResult = [];
+    
+    text.split('').map((letter) => {
+        const leetTableLetter = {
+            a: "4",
+            b: "13",
+            c: "(",
+            d: "[)",
+            e: "3",
+            f: "|=",
+            g: "6",
+            h: "|-|",
+            i: "|",
+            j: ".]",
+            k: "|<",
+            l: "1",
+            m: "|Y|",
+            n: "/\/",
+            o: "0",
+            p: "|>",
+            q: "0,",
+            r: '|2',
+            s: "5",
+            t: "7",
+            u: '[_]',
+            v: 'V',
+            w: '\v/',
+            x: '}{',
+            y: '`/',
+            z: "2",
+        };
+
+        if(leetTableLetter.hasOwnProperty(letter)) {
+            finalResult.push(leetTableLetter[letter.toLowerCase()]);
+        } else {
+            finalResult.push(letter.toLowerCase())
+        }
+        
+    })
+        return finalResult.join('');
 }
 
-    return leetText;
-}
-
-
-
-let texto = 'texto que hay q pasar a leet';
-
-let finalText = texto.split('').map((letter) => {
-
-    const leetTableLetter = {
-        a: "4",
-        b: "8",
-        e: "3",
-        g: "6",
-        l: "1",
-        o: "0",
-        s: "5",
-        t: "7",
-        z: "2"
-    };
-
-    if(leetTableLetter.hasOwnProperty(letter)) {
-        return leetTableLetter[letter];
-    } else {
-        return letter;
-    }
+buttonLeet.addEventListener('click', () => {
+    result.innerText = leetConverter(textArea.value);
 })
-
-console.log(finalText.join(''));
-console.log(convertToLeet(texto));
-

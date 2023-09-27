@@ -30,3 +30,19 @@ h1, h2, h3, h4, h5, h6, p {
 .text-center {
     text-align: center;
 }
+
+.container {
+    display: flex;
+    gap: 25px;
+    flex-direction: row;
+    justify-content: center;
+
+}
+
+button {
+    padding: 10px;
+}
+
+#result {
+    font-size: 25px;
+}
