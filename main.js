@@ -45,7 +45,7 @@ function leetConverter(text) {
             z: "2",
         };
 
-        if(leetTableLetter.hasOwnProperty(letter)) {
+        if(leetTableLetter.hasOwnProperty(letter.toLowerCase())) {
             finalResult.push(leetTableLetter[letter.toLowerCase()]);
         } else {
             finalResult.push(letter.toLowerCase())
@@ -74,7 +74,7 @@ function leetConverterSimple(text) {
             z: "2",
         };
 
-        if(leetTableLetter.hasOwnProperty(letter)) {
+        if(leetTableLetter.hasOwnProperty(letter.toLowerCase())) {
             finalResult.push(leetTableLetter[letter.toLowerCase()]);
         } else {
             finalResult.push(letter.toLowerCase())
@@ -112,3 +112,9 @@ reset_all.addEventListener('click', () => {
     multiple_advance.value = '';
     text_area_multiple.value = '';
 })
+
+/*
+textArea.addEventListener('change', () => {
+    result.value = leetConverterSimple(textArea.value);
+});
+*/
