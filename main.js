@@ -113,8 +113,25 @@ reset_all.addEventListener('click', () => {
     text_area_multiple.value = '';
 })
 
-/*
-textArea.addEventListener('change', () => {
-    result.value = leetConverterSimple(textArea.value);
-});
-*/
+let select_options = document.getElementById('select_options');
+let button_select = document.getElementById('button_select');
+let text_area_select = document.getElementById('text_area_select');
+let text_area_select_result = document.getElementById('text_area_select_result');
+
+select_options.addEventListener('change', () => {
+    console.log(select_options.value);
+})
+
+button_select.addEventListener('click', () => {
+    
+    switch(select_options.value){
+        case 'basic':
+            return text_area_select_result.value = leetConverterSimple(text_area_select.value);
+            break;
+        case 'medium':
+            return text_area_select_result.value = leetConverter(text_area_select.value);
+            break;
+
+    }
+    console.log(select_options.value);
+})
