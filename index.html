@@ -8,11 +8,14 @@
     <script defer src="main.js"></script>
 </head>
 <body>
-    <h1 class="title text-center">Leet challenge by Ignacio</h1>
 
-    <h2 class="text-center subtitle">primer sistema de conversion</h2>
+    <!-- PRIMERA PARTE DEL RETO ---------------------------------------------->
 
-    <p class="text-p text-center">este sistema permite escoger cual sistema LEET usar para convertir el texto</p>
+    <h1 class="title text-center text-white">Leet challenge by Ignacio</h1>
+
+    <h2 class="text-center subtitle text-white text-uppercase">primer sistema de conversion</h2>
+
+    <p class="text-p text-center text-white">este sistema permite escoger cual sistema LEET usar para convertir el texto</p>
 
     <div class="container">
 
@@ -29,16 +32,18 @@
     </div>
 
     <div class="second-container">
-        <button class="btn" id="buttonLeet">Convertir a leet</button>
-        <button class="btn" id="buttonLeetSimple">Convertir a leet simple</button>
+        <button class="btn" id="buttonLeet">leet advance</button>
+        <button class="btn" id="buttonLeetSimple">leet simple</button>
         <button class="btn" id="buttonReset">reset</button>
     </div>
 
-    <h2 class="subtitle text-center">segundo sistema de conversion</h2>
+    <!-- SEGUNDA PARTE DEL RETO ------------------------------------------------------------------->
 
-    <p class="text-p text-center">este segundo sistema convierte el texto a todos los sistemas LEET de forma simultanea</p>
+    <h2 class="subtitle text-center text-white text-uppercase">segundo sistema de conversion</h2>
 
-    <div class="sub-container">
+    <p class="text-p text-center text-white">este segundo sistema convierte el texto a todos los sistemas <br> LEET de forma simultanea al escribir dentro del text area</p>
+
+    <div class="sub_container_2">
         <p class="text-center subtitle text-uppercase text-white text-bold">texto de entrada</p>
         <textarea class="text-area" name="textLeet" id="leetTextMultiple" cols="20" rows="7"></textarea>
     </div>
@@ -53,20 +58,24 @@
 
         <div class="sub-container">
             <p class="text-center subtitle text-uppercase text-white text-bold">leet avanzado</p>
-
             <textarea class="text-area" name="textLeet" id="leet-multiple-advance" cols="20" rows="7"></textarea>
         </div>
-        
+
     </div>
 
-    <div class="button-container">
-        <button class="btn" id="button-conversion-multiple">convert</button>
-        <button class="btn" id="button-reset-multiple">reset all</button>
+    <div class="button_container">
+        <button id="reset_all" class="btn">reset all</button>
     </div>
+
+    <!-- TERCERA PARTE DEL RETO ------------------------------------------------------------>
 
     <div class="container_third">
 
-        <div class="sub_container">
+        <h2 class="text-center subtitle text-white text-uppercase">tercer sistema de conversion</h2>
+
+        <p class="text-p text-center text-white">este sistema usa un text area y un selector para decidir la complejidad de la conversion leet</p>
+
+        <div class="sub_container_2">
             <p class="text-center subtitle text-uppercase text-white text-bold">texto de entrada</p>
             <textarea class="text-area" name="text area select" id="text_area_select" cols="20" rows="8"></textarea>
         </div>
@@ -81,14 +90,14 @@
             <button class="btn" id="button_select">convert</button>
         </div>
 
-        <div class="sub_container">
+        <div class="sub_container_2">
             <p class="text-center subtitle text-uppercase text-white text-bold">texto de salida</p>
             <textarea class="text-area" name="" id="text_area_select_result" cols="20" rows="8"></textarea>
         </div>
 
     </div>
 
-    
+    <a class="link" href="https://github.com/Pinto2291/reto-leet-ignacio">GitHub Repositorio</a>
 
 </body>
 </html>

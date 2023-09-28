@@ -44,6 +44,15 @@ h1, h2, h3, h4, h5, h6, p {
     font-weight: bold;
 }
 
+.margin_auto {
+    margin: auto;
+}
+
+.button_container {
+    display: flex;
+    justify-content: center;
+}
+
 /* Title and subtitle */
 
 .title {
@@ -60,7 +69,7 @@ h1, h2, h3, h4, h5, h6, p {
 
 .text-p {
     margin: 1.5rem 0;
-    font-size: 1.5rem;
+    font-size: 1.8rem;
 }
 
 .container {
@@ -127,6 +136,10 @@ button {
 
 .select_options {
     font-size: 2rem;
+    border-radius: 1rem;
+    border: 0.25rem solid black;
+    text-align: center;
+    padding: 0.5rem;
 }
 
 .sub_container {
@@ -139,4 +152,27 @@ button {
     justify-content: center;
     gap: 1.5rem;
     margin: 1rem 0;
+}
+
+.sub_container_2 {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 1rem auto;
+    width: 75%;
+}
+
+.link {
+    font-size: 2rem;
+    text-align: center;
+    margin: 2rem auto;
+    transition: all 200ms ease-in-out 150ms;
+    padding: 2rem;
+    display: block;
+    color: var(--font-white);
+}
+
+.link:hover {
+    transform: scale(1.25);
+    color: yellow;
 }
